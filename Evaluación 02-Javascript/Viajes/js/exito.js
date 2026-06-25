@@ -1,4 +1,4 @@
-// Recuperar datos [cite: 26]
+// Recuperar datos
 const datos = JSON.parse(localStorage.getItem('datosViaje'));
 if (datos) {
     document.getElementById('resumen').innerHTML = `
@@ -7,7 +7,7 @@ if (datos) {
     `;
 }
 
-// Cerrar sesión [cite: 28]
+// Cerrar sesión
 document.getElementById('btnCerrar').addEventListener('click', () => {
     localStorage.clear();
     window.location.href = 'login.html';
